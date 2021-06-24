@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+.input{
+    display:flex;
+    
+}
+
+input{
+   margin:20px auto;
+   border-radius: 5px;
+   width:55%;
+   height:45px;
+   border: 1px solid #c4c4c4;
+   text-indent: 8px;
+   &:focus {
+     outline: none;
+   }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
+    grid-template-rows:repeat(minmax(auto,200px));
+    gap: 20px;
+    justify-content: center;
+  }
